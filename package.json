@@ -1,0 +1,32 @@
+{
+  "name": "tinypng-plugin",
+  "version": "1.0.0",
+  "description": "基于 node + tinify + typescript 实现自动批量图片压缩。",
+  "main": "lib/index.js",
+  "bin": {
+    "tinypng": "./bin/tinypng.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhoukaiyue/tinypng-plugin.git"
+  },
+  "author": "xianzhoukai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhoukaiyue/tinypng-plugin/issues"
+  },
+  "homepage": "https://github.com/zhoukaiyue/tinypng-plugin#readme",
+  "dependencies": {
+    "console-color-mr": "^2.0.2",
+    "minimist": "^1.2.5",
+    "progress": "^2.0.3",
+    "tinify": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "typescript": "^4.5.5"
+  }
+}
