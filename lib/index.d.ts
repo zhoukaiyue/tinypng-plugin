@@ -25,4 +25,4 @@ declare function TinifyCore(): Promise<unknown>;
  *  */
 declare function setTinifyKay(c: number): void;
 /**  调 tinify 接口对图片进行处理 */
-declare function reduceImages(): Promise<void>;
+declare function reduceImages(): void;

@@ -69,6 +69,8 @@ node tinyPngStart.js  --key="key1|key2|ke3" --type="\.(jpg|png)"
 
 ## 运行插件
 
+** TODO: 该插件会在你的根目录生成日志文件 tinypng-success.log，仅供使用者参考，如果你不想版本控制该文件，可以在.gitignore 做忽略。**
+
 - 本地安装
 
   - 有配置文件

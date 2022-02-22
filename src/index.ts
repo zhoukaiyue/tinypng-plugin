@@ -156,7 +156,7 @@ function setTinifyKay(c: number) {
 }
 
 /**  调 tinify 接口对图片进行处理 */
-async function reduceImages() {
+function reduceImages() {
 
     console.log(("\n开始处理，请稍后\n" as any).green);
 
