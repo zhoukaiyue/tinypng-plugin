@@ -1,7 +1,21 @@
 {
   "name": "tinypng-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于 node + tinify + typescript 实现自动批量图片压缩。",
+  "keywords": [
+    "tinify",
+    "node-tinify",
+    "tinypng",
+    "node-tinypng",
+    "tinyPng",
+    "node-tinyPng",
+    "node + tinify + typescript",
+    "node + tinyPng + typescript",
+    "node + tinypng + typescript",
+    "tinypng-node",
+    "tinypng-plugin",
+    "typescript"
+  ],
   "main": "lib/index.js",
   "bin": {
     "tinypng": "./bin/tinypng.js"

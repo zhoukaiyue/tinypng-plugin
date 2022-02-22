@@ -13,6 +13,22 @@
 
 #
 
+## 引入组件
+
+- 本地安装
+
+  在你的文件根目录创建执行文件如：tinyPngStart.js。
+
+  ```
+  require("tinypng-plugin")
+  ```
+
+- 全局安装
+
+  无需引入
+
+#
+
 ## 配置插件
 
 <font color=#00ffff size=4 face="微软雅黑">\* 由于该插件是基于 tinify，所以使用该插件需要一些基础配置。</font>
@@ -42,29 +58,12 @@ key=key1|key2|key3
 <font color=#00ffff size=3 face="微软雅黑">2.通过命令行设置插件依赖配置。</font>
 
 ```
+全局安装：
 tinypng --key="key1|key2|ke3" --type="\.(jpg)"
 
-或
-
+本地安装：
 node tinyPngStart.js  --key="key1|key2|ke3" --type="\.(jpg|png)"
 ```
-
-#
-
-## 引入组件
-
-- 本地安装
-
-  在你的文件根目录创建执行文件如：tinyPngStart.js。
-
-  ```
-  require("tinypng-plugin")
-
-  ```
-
-- 全局安装
-
-  无需引入
 
 #
 

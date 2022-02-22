@@ -19,13 +19,12 @@ const _console = require('console-color-mr');
 /** 
  * 读取文件内容
  * @param {string} url  文件地址 ，如: /tinypng-success.log
- * @param {boolean} ignore  忽略读取该文件时的异常检测,，非必传，默认false
  */
-exports.readFile = function (url: string, ignore = false) {
+exports.readFile = function (url: string) {
     return new Promise((resolve, reject) => {
         fs.readFile(url, "utf-8", function (error: any, data: any) {
             //  用error来判断文件是否读取成功
-            if (error) ignore ? resolve("") : reject(error);
+            if (error) resolve("");
             //返回文件内容
             resolve(data);
         });
@@ -98,18 +97,6 @@ exports.PromiseRetry = function (callback: any, times: number, delay: number, ca
         }
         attempt()
     })
-}
-
-/**
- * 读取文件的哈希值(同步)
- */
-exports.createFileHash256Sync = function (file: any) {
-    //读取一个Buffer
-    const buffer = fs.readFileSync(file);
-    const fsHash = createHash('sha256');
-    fsHash.update(buffer);
-    const md5 = fsHash.digest('hex');
-    return md5
 }
 
 
